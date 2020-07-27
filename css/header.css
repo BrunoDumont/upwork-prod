@@ -1,0 +1,279 @@
+.header {
+	background-color: #a300ff;
+	display: flex;
+	flex-direction: column;
+	padding: 0 30px;
+}
+	.header__wrap {
+		display: flex;
+		justify-content: space-between;
+		height: 80px;
+		width: 100%;
+	}
+
+
+	.header__block {
+		margin-top: -80%;
+    	padding-top: 1%;
+    	background-color: #a300ff;
+		position: relative;
+	}
+	.header__bg {
+		width: 86vw;
+		margin-top: -25%;
+	}
+
+	
+	.header__nav {
+		display: flex;
+		justify-content: space-between;
+		width: 80px;
+	}
+	.header__nav,
+	.header__logo {
+		padding-top: 15px;
+	}
+	.header__join {
+		display: none;
+		text-decoration: none;
+		color: #ffffff;
+	}
+	.header__link {
+		color: #ffffff;
+		font-family: "Basis Grotesque Pro", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		text-decoration: none;
+	}
+
+	.header__link:hover{
+		opacity: .75;
+	}
+		.header__link span{
+			color: #ffffff;
+			font-family: "Basis Grotesque Pro", sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+	.header__elem {
+		list-style: none;
+	}
+	.header__elem:first-child:hover {
+		color: #63009c;
+		background-color: #ffffff;
+	}
+		.header__elem:first-child,
+		.header__number {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			border-radius: 50%;
+			color: #ffffff;
+		}
+
+		.header__elem:first-child {
+			width: 31px;
+			height: 31px;
+			background-color: #63009c;
+
+			font-family: "Basis Grotesque Pro", sans-serif;
+			font-size: 12px;
+			font-weight: 400
+		}
+		.header__number {
+			width: 16px;
+			height: 16px;
+			background-color: #7200b3;	
+
+			font-family: "Basis Grotesque Pro Black", sans-serif;
+			font-size: 10px;
+			font-weight: bold;
+
+			position: relative;
+			bottom: 16px;
+			left: 13px;
+		}
+		.header__image {
+			height: 31px;
+		}
+
+	.header__logo {
+		display: flex;
+    	flex-direction: column;
+	}
+		.header__logo--sticker {
+			width: 107px;
+			position: relative;
+    		z-index: 3;
+		}
+		.header__logo--park {
+			width: 83px;
+			position: relative;
+			bottom: 5px;
+			z-index: 1;
+		}
+
+	.header__title {
+		color: #ffffff;
+
+		font-family: "Basis Grotesque Pro", sans-serif;
+		font-size: 43px;
+		font-weight: bold;
+		letter-spacing: -0.95px;
+
+		display: flex;
+		flex-direction: column;
+	}
+	.header__subtitle {
+		color: #ffffff;
+		font-family: "Basis Grotesque Pro", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	.header__button {
+		background-image: url(../images/button-bg.svg);
+		background-repeat: no-repeat;
+
+    	border: none;
+		outline: none;
+		background-color: #a300ff;
+		width: 140px;
+		height: 38px;
+		margin: 25px 0px 30px;
+	}
+
+	.header__button:hover {
+		background-image: none;
+		background-color: #222222;
+	}
+	.header__button:hover::after{
+		background-image: none;
+		background-color: #222222;
+
+		display: none;
+	}
+		.header__button span {
+			color: #ffffff;
+			font-family: "Basis Grotesque Pro", sans-serif;
+			font-size: 15px;
+			font-weight: bold;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+		.header__button::after{
+			content: "";
+			background-image: url(../images/white-angle.svg);
+			background-repeat: no-repeat;
+			width: 10px;
+			height: 35px;
+
+			display: block;
+			position: relative;
+			bottom: 34px;
+			left: 124px;
+		}
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (min-width: 600px) {
+	.header {
+		/* flex-direction: row; */
+		justify-content: space-around;
+	}
+	.header__wrapper {
+		display: flex;
+	}
+	.header__block {
+		margin-top: 0%;
+    	padding-top: 0%;
+    	background-color:transparent;
+		
+	}
+	.header__bg {
+		margin-top: -10%;
+		margin-bottom: -30%;
+		width: 45vw;
+	}
+	.header__join {
+		display: flex;
+		padding-top: 1.5rem;
+		margin-left: 40%;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* ------------------------------
+		DESKTOP (1200px)
+------------------------------ */
+
+@media only screen and (min-width: 1200px) {
+	
+	.header{
+		min-height: 50vh;
+		padding-top: 25px;
+	}
+	.header__title {
+		display: block;
+	}
+
+	.header__block {
+		width: 450px;
+	}
+	.header__join {
+		margin-left: 50%;
+	}
+	.header__bg {
+		margin-top: -15%;
+    	margin-bottom: -45%;
+    	width: 44vw;
+	}
+	.header__wrapper {
+		justify-content: flex-start;
+	}
+
+}
+
+/* ------------------------------
+		DESKTOP (1595px)
+------------------------------ */
+
+@media only screen and (min-width: 1595px) {
+	.header__title {
+		font-size: 62px;
+		margin-bottom: 2rem;
+	}
+
+	.header__block {
+		width: 550px;
+	}
+	.header__subtitle {
+		font-size: 19px;
+	}
+	.header__bg {
+		
+	}
+}
+
+
+/* ANIMATIONS */
+
+/* .header__logo:hover .header__logo--sticker {
+	transition: 0.3s;
+
+  cursor: pointer;
+  transform: translateZ(10px);
+
+} */
